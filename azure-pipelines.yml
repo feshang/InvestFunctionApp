@@ -23,11 +23,11 @@ steps:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)/app'
     artifactName: app
 
-#- task: CopyFiles@2
-#  displayName: 'Copy end to end tests'
-#  inputs:
-#    sourceFolder: 'src/InvestFunctionApp'
-#    targetFolder: '$(Build.ArtifactStagingDirectory)/e2etests'
+- task: CopyFiles@2
+  displayName: 'Copy end to end tests'
+  inputs:
+    sourceFolder: 'src/InvestFunctionApp'
+    targetFolder: '$(Build.ArtifactStagingDirectory)/e2etests'
 
 #- task: PublishBuildArtifacts@1
 #  displayName: 'Publish end to end test artifact'
