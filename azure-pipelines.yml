@@ -29,8 +29,8 @@ steps:
     sourceFolder: 'src/InvestFunctionApp'
     targetFolder: '$(Build.ArtifactStagingDirectory)/e2etests'
 
-#- task: PublishBuildArtifacts@1
-#  displayName: 'Publish end to end test artifact'
-# inputs:
-#    pathtoPublish: '$(Build.ArtifactStagingDirectory)/e2etests'
-#    artifactName: e2etests
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish end to end test artifact'
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/e2etests'
+    artifactName: e2etests
